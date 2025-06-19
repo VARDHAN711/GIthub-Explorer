@@ -1,12 +1,35 @@
-# React + Vite
+# GitHub Project Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application to explore GitHub repositories with features like search, filters, bookmarks, analytics, and chart visualizations.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔍 Repository Explorer
+- Search repositories by name
+- Filter by language (JavaScript, Python, Java, TypeScript)
+- Sort by stars, forks, or recently updated
+- Bookmark repositories for quick access
+- Add personal notes to bookmarked repositories
 
-## Expanding the ESLint configuration
+### 📁 Bookmark Manager
+- View all bookmarked repositories
+- Remove bookmarks
+- Persist notes per repository
+- Clean responsive card layout using CSS Grid
+- Styled using regular CSS (Tailwind was removed due to config issues)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📊 Repo Analytics Page
+- View per-repository analytics (stars, forks, issues, last updated)
+- Pie chart breakdown of repository languages
+- Custom list with colored language tags matching pie chart colors
+- Bar chart showing top 5 contributors
+- Charts built using `react-chartjs-2` and `chart.js`
+
+## 🛠 Tech Stack
+
+- **Frontend:** React (Vite)
+- **Routing:** React Router DOM
+- **Charts:** Chart.js & react-chartjs-2
+- **HTTP Client:** Fetch API
+- **State:** React Context for bookmarks
+- **Styling:** CSS
